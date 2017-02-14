@@ -33,6 +33,10 @@ angular.module('ionic-toast.provider', [])
           toastStyle: {
             display: 'none',
             opacity: 0
+          },
+          style: {
+            display: 'none',
+            opacity: 0
           }
         };
 
@@ -53,6 +57,10 @@ angular.module('ionic-toast.provider', [])
             display: display,
             opacity: opacity,
             'background-color': background
+          };
+          $scope.ionicToast.style = {
+            display: display,
+            opacity: opacity
           };
           $scope.ionicToast.toastStyle.opacity = opacity;
           callback();
